@@ -5,7 +5,7 @@
 
 void setup() {
   Serial.begin(57600);
-  mySerial.begin(115200);
+  mySerial.begin(9600);
   delay(100);
 
   Serial.println("LoRa Receiver, FAYE Mesonet, Fridley Lab");
