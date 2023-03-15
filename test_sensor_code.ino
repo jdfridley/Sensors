@@ -4,6 +4,10 @@
 #include <Adafruit_ADS1015.h>           //ADC code
 Adafruit_ADS1115 ads1115(0x48);         //one of 4 addresses
 
+#include "uRTCLib.h"                   //Library to run the RTC alarm 
+#define URTCLIB_MODEL_DS3231 2        //RTC model
+uRTCLib rtc(0x68);                    //RTC I2C address
+
 #include <BME280I2C.h>
 BME280I2C bme;    // Default : forced mode, standby time = 1000 ms
                   // Oversampling = pressure ×1, temperature ×1, humidity ×1, filter off,
