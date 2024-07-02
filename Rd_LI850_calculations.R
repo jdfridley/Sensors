@@ -16,7 +16,7 @@
 	#Change this path to your folder that contains all the LI-850 text files (and ONLY those files)
 	#Filenames should match the 'tag' column in the spreadsheet below
 		#example: sample with tag '107' should have a LI-850 file saved as "107.txt"
-	folder = c(""C:\\Users\\Jenna Martineau\\OneDrive - Clemson University\\Documents\\Clemson University\\Rd SCBG summer 2023\\")	
+	folder = c("C:\\Users\\Jenna Martineau\\OneDrive - Clemson University\\Documents\\Clemson University\\Rd SCBG summer 2023\\")	
 	filenames = list.files(folder)
 	#N = length(filenames) #total number of files
 
