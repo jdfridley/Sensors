@@ -84,8 +84,9 @@ void setup() {
 
       // these readings are what are actually written to file
 
-      int power = analogRead(A0); //this reads the 5V line through the resistor to A0
-
+      //int power = analogRead(A0); //this reads the 5V line through the resistor to A0
+      float power = (analogRead(A0)/1024)*6.5; //this reads the 5V line and coverts to voltage based on gain
+  
   //light readings
   write8( BH1750_POWER_ON);
   write8( mt_H( 31));          // lowest value of measurement time
